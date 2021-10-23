@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:text="Contact Name:"
+            app:layout_constraintBottom_toTopOf="@+id/contact_phone_number"
+            app:layout_constraintEnd_toStartOf="@+id/enter_contact_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/textBox" />
+
+        <Button
+            android:id="@+id/saveContactInfoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Contact Info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enter_contact_number"
+            app:layout_constraintVertical_bias="0.16" />
+
+        <EditText
+            android:id="@+id/enter_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            app:layout_goneMarginEnd="34dp"
+            android:hint="Enter contact name"
+            android:inputType="textPersonName"
+            app:layout_constraintBaseline_toBaselineOf="@+id/contact_name"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/enter_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter phone number"
+            app:layout_constraintBaseline_toBaselineOf="@+id/contact_phone_number"
+            app:layout_constraintStart_toStartOf="@+id/enter_contact_name" />
+
+        <TextView
+            android:id="@+id/contact_phone_number"
+            style="@style/textBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="139dp"
+            android:text="Phone Number:"
+            app:layout_constraintEnd_toEndOf="@+id/contact_name"
+            app:layout_constraintStart_toStartOf="@+id/contact_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contactName1"
+            style="@style/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="66dp" />
+
+        <TextView
+            android:id="@+id/contactNumber1"
+            style="@style/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/contactName1"
+            app:layout_constraintTop_toBottomOf="@+id/contactName1" />
+
+        <TextView
+            android:id="@+id/contactName2"
+            style="@style/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/contactName3"
+            app:layout_constraintTop_toBottomOf="@+id/contactName1"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/contactNumber2"
+            style="@style/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/contactName2"
+            app:layout_constraintTop_toBottomOf="@+id/contactName2" />
+
+        <TextView
+            android:id="@+id/contactName3"
+            style="@style/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactName1"
+            tools:layout_editor_absoluteX="61dp" />
+
+        <TextView
+            android:id="@+id/contactNumber3"
+            style="@style/textBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/contactName3"
+            app:layout_constraintTop_toBottomOf="@+id/contactName3" />
+
+        <TextView
+            android:id="@+id/idlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="445dp"
+            tools:ignore="MissingConstraints"
+            android:visibility = "gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
